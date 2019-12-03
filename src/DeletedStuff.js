@@ -1,3 +1,4 @@
+/*
 <p>You are logged in</p>
 <button onClick={logout}>Exit</button>
 
@@ -60,3 +61,4 @@ api.listen(apiPort, (err) => {
 
 
 
+*/
