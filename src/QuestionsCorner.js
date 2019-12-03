@@ -8,18 +8,29 @@ class QuestionsCorner extends React.Component {
     render() {
         return (
             <div className='questionscorner'>
-                <h1>Welcome to the QC</h1>
-                <h2>Ask me your questions!</h2>
                 <div className='formdiv'>
-                <form className='questionsform'>
-                    <div>
-                    First name: <input type="text" name="fname" />
-                    </div>
-                    <textarea className='qctext' rows='13' cols='42'>
-                      Submit your questions here...
-                    </textarea>
-                    <div><input type='submit' value='Submit' /></div>
-                </form>
+                    <form id="questionsCorner">
+                        <div>
+                            <h1>Submit your questions!!</h1>
+                            <label>
+                                <span>Your name</span><input id="name" type="text" name="name" />
+                            </label>
+
+                            <label>
+                                <span>Email Address</span><input id="email" type="text" name="email" />
+                            </label>
+
+                            <label>
+                                <span>Subject</span><input id="subject" type="text" name="subject" />
+                            </label>
+
+                            <label>
+                                <span>Message</span><textarea id="feedback" name="feedback"></textarea>
+                                <input id="qcbutton" type="button" value="Submit Form" />
+                            </label>
+
+                        </div>
+                    </form>
                 </div>
             </div>
         )
